@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tea House</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Manrope font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .manrope_font {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
-<body>
-    
+<body class="bg-white">
+
+ <!-- Banner Section -->
+<div class="border max-w-screen-xl mx-auto px-4 py-10">
+  <div class="flex flex-col md:flex-row items-start rounded-lg p-6 gap-6">
+
+    <!-- Left Content -->
+    <div class="flex-1 border-2 border-red-900">
+      <h1 class="manrope_font text-[48px] md:text-[74px] font-bold leading-tight">
+        It's good <br>
+        tea time at The <br> Tea House
+      </h1>
+      <p class="manrope_font text-[18px] mt-4 mb-6 text-gray-400">
+        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+      </p>
+      <button class="manrope_font w-[200px] h-[64px] bg-gradient-to-r from-orange-400 to-red-700 text-white rounded-lg transition">
+        Explore More
+      </button>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex-1 flex justify-center items-center h-full border-2 border-red-900">
+      <img src="resource/images/banner.png" alt="banner" class="relative top-[120px] max-w-full h-auto">
+    </div>
+
+  </div>
+</div>
 </body>
 </html>
